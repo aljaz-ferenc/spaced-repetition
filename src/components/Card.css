@@ -1,9 +1,10 @@
 .card1 {
-  width: 20rem;
+  width: 50%;
+  aspect-ratio: 0.66;
+  max-width: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30rem;
   position: relative;
   perspective: 150rem;
   margin: 3rem auto;
@@ -25,6 +26,7 @@
   transition: transform 1s;
   background-color: #cbd8f8;
   padding: 1rem;
+  text-align: center;
 }
 
 .back {
@@ -61,4 +63,29 @@
 .answer-result p {
   text-align: center;
   margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .card1 {
+    width: 60%;
+  }
+  .front,
+  .back {
+    font-size: .8rem;
+  }
+}
+@media (max-width: 650px) {
+  .card1 {
+    width: 70%;
+  }
+}
+@media (max-width: 425px) {
+  .card1 {
+    width: 80%;
+  }
+  .front,
+  .back {
+    padding: 0.5rem;
+    font-size: .7rem;
+  }
 }
