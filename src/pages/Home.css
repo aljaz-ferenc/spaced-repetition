@@ -1,0 +1,28 @@
+.decks {
+  display: flex;
+  max-width: 90%;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.home {
+  background-color: #fff;
+  min-height: 90vh;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.add-deck {
+  border: 1px solid black;
+  width: 20rem;
+  height: 5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.plus-icon {
+  height: 50%;
+}

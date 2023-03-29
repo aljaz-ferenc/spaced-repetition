@@ -1,0 +1,62 @@
+.card1 {
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  position: relative;
+  perspective: 150rem;
+  margin: 3rem auto;
+  backface-visibility: hidden;
+  background-color: transparent;
+}
+
+.front,
+.back {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: transform 1s;
+  background-color: #cbd8f8;
+}
+
+.back {
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+.card1.rotate .front {
+  transform: rotateY(-180deg);
+}
+.card1.rotate .back {
+  transform: rotateY(0);
+}
+
+.card-btn {
+  height: 3rem;
+  margin: 1rem auto;
+  display: block;
+}
+
+.answer-btns {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.answer-btns button {
+  width: 100%;
+  height: 100%;
+}
+
+.answer-result p {
+  text-align: center;
+  margin-top: 3rem;
+}

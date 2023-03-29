@@ -1,0 +1,33 @@
+.deck {
+  border: 1px solid rgba(4, 62, 148, 0.61);
+  width: 17rem;
+  height: 5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25rem;
+  overflow: hidden;
+  margin: 0 1rem;
+  max-width: 90vw;
+  background-color: #fff;
+}
+
+.deck__head {
+  text-transform: uppercase;
+  padding: 5%;
+  background-color: rgb(212, 221, 239);
+}
+
+.deck__body {
+  text-align: center;
+  padding: 5%;
+}
+
+.deck__footer {
+  width: 100%;
+}
+
+.deck__footer {
+  height: 3rem;
+}
