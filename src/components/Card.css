@@ -9,6 +9,7 @@
   margin: 3rem auto;
   backface-visibility: hidden;
   background-color: transparent;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
 }
 
 .front,
@@ -23,6 +24,7 @@
   backface-visibility: hidden;
   transition: transform 1s;
   background-color: #cbd8f8;
+  padding: 1rem;
 }
 
 .back {

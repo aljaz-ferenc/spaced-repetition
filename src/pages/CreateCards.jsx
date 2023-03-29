@@ -83,7 +83,7 @@ export default function CreateCards() {
     e.preventDefault();
     if (!selectedDeck || questionInput === "" || answerInput === "") return;
 
-    addCard(selectedDeck, questionInput, answerInput, 10).then(
+    addCard(selectedDeck, questionInput, answerInput).then(
       getCardsByDeck(selectedDeck).then((cards) => setCards(cards))
     );
 
@@ -141,7 +141,7 @@ export default function CreateCards() {
           </button>
         )}
 
-        <div onSubmit={handleSubmitCard} action="">
+        <form onSubmit={handleSubmitCard} action="">
           {deckIsShown && (
             <form className="form-control">
               <label htmlFor="title">Deck:</label>
@@ -227,7 +227,7 @@ export default function CreateCards() {
                 </div>
               ))}
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
