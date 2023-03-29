@@ -9,6 +9,8 @@
   gap: 3rem;
   align-items: center;
   margin: 0 auto;
+  text-align: justify;
+
 }
 
 .how-it-works > div {
@@ -16,4 +18,18 @@
 }
 .how-it-works img {
   max-width: 90%;
+}
+
+@media(max-width: 768px){
+  .how-it-works {
+    padding: 1rem;
+    line-height: 1.5;
+    gap: 3rem;
+  }
+}
+@media(max-width: 425px){
+  .how-it-works {
+    padding: .5rem;
+    gap: 2rem;
+  }
 }

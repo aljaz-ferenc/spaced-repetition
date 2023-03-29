@@ -12,6 +12,13 @@
   padding: 2rem;
 }
 
+.home h2{
+  margin-bottom: 2rem;
+}
+.home h3{
+  margin-bottom: 2rem;
+}
+
 .add-deck {
   border: 1px solid black;
   width: 20rem;
@@ -25,4 +32,25 @@
 
 .plus-icon {
   height: 50%;
+}
+
+@media(max-width: 768px){
+  .home{
+    padding: 1rem;
+  }
+  .home h2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .home h3{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+}
+
+@media(max-width: 425px){
+  .home{
+    padding: .5rem;
+  }
 }

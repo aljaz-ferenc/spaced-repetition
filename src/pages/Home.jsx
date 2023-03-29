@@ -10,9 +10,9 @@ export default function Home() {
 
   return (
     <div className="home">
-      <h2 className="h1 my-3">Hello, User1234!</h2>
-      <h3 className="h2 my-5">What would you like to review?</h3>
-      <div className="decks mt-5">
+      <h2>Hello, User1234!</h2>
+      <h3 className="h2">What would you like to review?</h3>
+      <div className="decks">
         {decks &&
           decks.map((deck) => (
             <Deck

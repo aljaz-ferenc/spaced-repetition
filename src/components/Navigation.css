@@ -37,3 +37,21 @@
   background-color: black;
   left: 0;
 }
+
+@media(max-width: 768px){
+  .navigation ul{
+    gap: 20px;
+  }
+  .navigation a{
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 425px){
+  .navigation ul{
+    gap: 10px;
+  }
+  .navigation a{
+    font-size: .8rem;
+  }
+}

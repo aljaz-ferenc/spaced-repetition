@@ -57,3 +57,10 @@
 small {
   color: rgba(0, 0, 0, 0.457);
 }
+
+@media(max-width: 425px){
+  .create-cards {
+    padding: 1rem;
+    margin: 0 auto;
+  }
+}

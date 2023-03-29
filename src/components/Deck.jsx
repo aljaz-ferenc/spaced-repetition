@@ -19,9 +19,9 @@ export default function Deck({ title, cards }) {
 
   return (
     <div className="deck">
-      <h3 className="deck__head h3">{title}</h3>
+      <h3 className="deck__head">{title}</h3>
       <div className="deck__body">
-        <p className="h5">Cards ready to review:</p>
+        <p>Cards ready to review:</p>
         {cardsInDeck && <p className="h4">{cardsInDeck.length}</p>}
       </div>
       <div className="deck__footer">

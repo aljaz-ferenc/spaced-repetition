@@ -6,5 +6,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 10vw;
+  padding-bottom: 1rem;
+}
+
+@media(max-width: 768px){
+  .App{
+    padding: 0 5vw;
+  }
+}
+
+@media(max-width: 425px){
+  .App{
+    padding: 2vw;
+  }
 }
 

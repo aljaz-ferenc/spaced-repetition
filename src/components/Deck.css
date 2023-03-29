@@ -1,7 +1,6 @@
 .deck {
   border: 1px solid rgba(4, 62, 148, 0.61);
-  width: 17rem;
-  height: 5rem;
+  aspect-ratio: .7;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -15,8 +14,9 @@
 
 .deck__head {
   text-transform: uppercase;
-  padding: 5%;
+  padding: 2%;
   background-color: rgb(212, 221, 239);
+  font-size: 1.5rem;
 }
 
 .deck__body {
@@ -30,4 +30,39 @@
 
 .deck__footer {
   height: 3rem;
+}
+
+@media(max-width: 768px){
+  .deck{
+    margin: 0 auto;
+    height: 20rem;
+    border-radius: 5px;
+  }
+  .deck p{
+    font-size: 1rem;
+  }
+  .deck__head{
+    padding: .3rem;
+    font-size: 1rem !important;
+  }
+  .deck__body *{
+    margin: .5rem;
+  }
+  
+}
+@media(max-width: 425px){
+  .deck{
+    margin: 0 auto;
+    height: 15rem;
+  }
+  .deck p{
+    font-size: 1rem;
+  }
+  .deck__head{
+    padding: .3rem;
+    font-size: .8rem !important;
+  }
+  .deck__body *{
+    margin: .5rem;
+  }
 }
